@@ -1,0 +1,19 @@
+{
+  "name": "alghijudge-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darklordace/alghijudge-api.git"
+  },
+  "author": "Firdaus Al-Ghifari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darklordace/alghijudge-api/issues"
+  },
+  "homepage": "https://github.com/darklordace/alghijudge-api#readme"
+}
