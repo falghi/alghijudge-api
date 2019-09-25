@@ -1,1 +1,92 @@
-abcdef
+4
+ORION 5
+kopyor 5 20
+gula 40 3
+coklat 30 2
+tiramisu 10 1
+vanilla 10 35
+OMEGA 2
+durian 50 5
+coklat 5 2
+TARUNG 1
+blueberry 10 2
+QUANTA 4
+mint 10 10
+blueberry 5 2
+coklat 60 2
+anggur 60 1
+7
+0
+Target 50
+Duar 3
+ORION coklat 25
+ORION tiramisu 10
+QUANTA blueberry 1
+Restock 2
+TARUNG kopyor 8 20
+QUANTA vanilla 5 30
+Transfer 0
+2
+TARUNG QUANTA
+Target 0
+Duar 1
+OMEGA durian 35
+Restock 0
+Transfer 2
+TARUNG ORION blueberry 10
+TARUNG OMEGA kopyor 8
+1
+TARUNG
+Target 50
+Duar 5
+ORION kopyor 4
+OMEGA durian 14
+OMEGA kopyor 7
+QUANTA coklat 60
+QUANTA anggur 50
+Restock 2
+TARUNG tiramisu 10 1
+QUANTA kopyor 3 20
+Transfer 2
+ORION TARUNG gula 5
+ORION QUANTA vanilla 3
+4
+ORION OMEGA TARUNG QUANTA
+Target 3
+Duar 0
+Restock 0
+Transfer 0
+2
+OMEGA TARUNG
+Target 20
+Duar 1
+QUANTA mint 5
+Restock 5
+OMEGA kopyor 9 20
+TARUNG kopyor 10 20
+TARUNG tiramisu 80 1
+TARUNG coklat 12 5
+QUANTA anggur 1 1
+Transfer 1
+TARUNG QUANTA tiramisu 70
+1
+QUANTA
+Target 12
+Duar 4
+ORION gula 30
+OMEGA durian 1
+QUANTA kopyor 2
+QUANTA tiramisu 50
+Restock 4
+ORION coklat 10 3
+OMEGA durian 3 5
+TARUNG coklat 3 2
+QUANTA tiramisu 12 1
+Transfer 2
+ORION OMEGA gula 5
+OMEGA QUANTA kopyor 6
+0
+Target 0
+Duar 0
+Restock 0
+Transfer 0
