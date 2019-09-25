@@ -25,7 +25,7 @@ const handleSubmitCode = (fs, hackerEarthApi) => (req, resp) => {
                             resp.json("failed");
                         } else {
                             resp.json({
-                                hasil: response,
+                                hasil: JSON.parse(response),
                                 output: outputData
                             });
                         }
