@@ -13,18 +13,16 @@ const handleSubmitCode = (fs, hackerEarthApi) => (req, resp) => {
             resp.json("failed");
         } else {
             // Test Case 1
-            fs.readFile("../static/in1", (err, data) => {
+            fs.readFile("static/in1", 'utf8', (err, data) => {
                 if (err) {
-                    resp.json("failed");
+                    resp.json(err);
                 } else {
                     let inputData = data;
-
-                    fs.readFile("../static/out1", (err, data) => {
+                    fs.readFile("static/out1", 'utf8', (err, data) => {
                         if (err) {
                             resp.json("failed");
                         } else {
                             let outputData = data;
-
                             config.input = inputData;
                             hackerEarthApi.run(config, (err, response) => {
                                 if (err) {
