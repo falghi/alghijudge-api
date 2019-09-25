@@ -27,6 +27,16 @@ if (DEBUG) {
 // --
 
 // ROUTING
+app.get('/', (req, resp) => {
+	resp.send(`
+MIT License<br>
+<br>
+Copyright (c) 2019 Firdaus Al-Ghifari<br>
+<br>
+Github: <a href="https://github.com/darklordace/alghijudge-api">https://github.com/darklordace/alghijudge-api</a>
+	`);
+});
+
 app.post('/submitcode', submitCode.handleSubmitCode(fs, hackerEarthApi));
 // --
 
