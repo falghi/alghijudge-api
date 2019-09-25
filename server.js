@@ -9,7 +9,7 @@ const submitCode = require('./controllers/submitcode');
 // GLOBAL VARIABLES
 const app = express();
 
-const hackerEarthApi = new hackerEarth('**********', '');
+const hackerEarthApi = new hackerEarth(process.env.HACKER_EARTH_API_KEY, '');
 
 const DEBUG = true;
 
