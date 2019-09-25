@@ -8,34 +8,28 @@ const handleSubmitCode = (fs, hackerEarthApi) => (req, resp) => {
     config.input = "";
     config.language = "JAVA";
 
-    hackerEarthApi.compile(config, (err, compileRes) => {
+    // Test Case 1
+    fs.readFile("static/in1", 'utf8', (err, data) => {
         if (err) {
             resp.json("failed");
         } else {
-            // Test Case 1
-            fs.readFile("static/in1", 'utf8', (err, data) => {
+            let inputData = data;
+            fs.readFile("static/out1", 'utf8', (err, data) => {
                 if (err) {
-                    resp.json(err);
+                    resp.json("failed");
                 } else {
-                    let inputData = data;
-                    fs.readFile("static/out1", 'utf8', (err, data) => {
+                    let outputData = data;
+                    config.input = inputData;
+                    hackerEarthApi.run(config, (err, response) => {
                         if (err) {
                             resp.json("failed");
                         } else {
-                            let outputData = data;
-                            config.input = inputData;
-                            hackerEarthApi.run(config, (err, response) => {
-                                if (err) {
-                                    resp.json("failed");
-                                } else {
-                                    resp.json({
-                                        hasil: response,
-                                        output: outputData
-                                    });
-                                }
-                            })
+                            resp.json({
+                                hasil: response,
+                                output: outputData
+                            });
                         }
-                    });
+                    })
                 }
             });
         }
