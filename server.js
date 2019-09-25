@@ -29,6 +29,8 @@ if (DEBUG) {
 // ROUTING
 app.get('/', (req, resp) => {
 	resp.send(`
+Visit the frontend: <a href="https://alghijudge.herokuapp.com/">https://alghijudge.herokuapp.com/</a><br>
+<br>
 MIT License<br>
 <br>
 Copyright (c) 2019 Firdaus Al-Ghifari<br>
