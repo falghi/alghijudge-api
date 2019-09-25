@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "localstart": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/darklordace/alghijudge-api/issues"
   },
-  "homepage": "https://github.com/darklordace/alghijudge-api#readme"
+  "homepage": "https://github.com/darklordace/alghijudge-api#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "hackerearth-node": "^2.3.9"
+  }
 }
