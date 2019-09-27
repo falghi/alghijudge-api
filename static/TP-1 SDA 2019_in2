@@ -1,0 +1,41 @@
+3
+ENAK 2
+gula 4 3
+coklat 3 2
+KEREN 1
+coklat 9 1
+JOMBLO 2
+gula 5 90
+anggur 6 4
+4
+2
+KEREN ENAK
+Target 6
+Duar 2
+KEREN coklat 5
+ENAK gula 4
+Restock 0
+Transfer 0
+3
+KEREN ENAK JOMBLO
+Target 7
+Duar 3
+KEREN coklat 1
+ENAK coklat 3
+JOMBLO anggur 2
+Restock 0
+Transfer 0
+2
+JOMBLO KEREN
+Target 9
+Duar 2
+JOMBLO gula 1
+JOMBLO anggur 2
+Restock 0
+Transfer 0
+3
+ENAK JOMBLO KEREN
+Target 87
+Duar 0
+Restock 0
+Transfer 0
