@@ -14,7 +14,7 @@ const handleSubmitCode = (fs, hackerEarthApi) => (req, resp) => {
 
     numberOfCases = numberOfCasesDict[problemName];
     promises = []
-    for (let i = 0; i < numberOfCases; ++i) {
+    for (let i = 0; i < 1; ++i) {
         promises[i] = new Promise((resolve, reject) => {
             fs.readFile(`static/${problemName}_in${i+1}`, 'utf8', (err, data) => {
                 if (err) {
