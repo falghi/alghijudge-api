@@ -10,15 +10,16 @@ const handleSubmitCode = (fs) => (req, resp) => {
 
     numberOfCases = numberOfCasesDict[problemName];
 
-    let config = {};
-    config.time_limit = 3;
-    config.memory_limit = 323244;
-    config.source = code;
-    config.input = "";
-    config.language = "JAVA";
-
-    promises = []
+    let configList = [];
+    let promises = [];
     for (let i = 0; i < numberOfCases; ++i) {
+        configList[i] = {}
+        configList[i].time_limit = 3;
+        configList[i].memory_limit = 323244;
+        configList[i].source = code;
+        configList[i].input = "";
+        configList[i].language = "JAVA";
+
         promises[i] = new Promise((resolve, reject) => {
             fs.readFile(`static/${problemName}_in${i+1}`, 'utf8', (err, data) => {
                 if (err) {
@@ -30,9 +31,9 @@ const handleSubmitCode = (fs) => (req, resp) => {
                             reject(new Error(err));
                         } else {
                             let outputData = data;
-                            config.input = inputData;
+                            configList[i].input = inputData;
                             if (i === 0) {
-                                hackerEarthApi.run(config, (err, response) => {
+                                hackerEarthApi.run(configList[i], (err, response) => {
                                     if (err) {
                                         reject(new Error(err));
                                     } else {
@@ -45,7 +46,7 @@ const handleSubmitCode = (fs) => (req, resp) => {
                                 });
                             } else {
                                 promises[i-1].then(value => {
-                                    hackerEarthApi.run(config, (err, response) => {
+                                    hackerEarthApi.run(configList[i], (err, response) => {
                                         if (err) {
                                             reject(new Error(err));
                                         } else {
