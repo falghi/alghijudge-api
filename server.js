@@ -1,15 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const hackerEarth = require('hackerearth-node');
 const fs = require('fs');
 
 const submitCode = require('./controllers/submitcode');
 
 // GLOBAL VARIABLES
 const app = express();
-
-const hackerEarthApi = new hackerEarth(process.env.HACKER_EARTH_API_KEY, '');
 
 const DEBUG = true;
 
@@ -39,7 +36,7 @@ Github: <a href="https://github.com/darklordace/alghijudge-api">https://github.c
 	`);
 });
 
-app.post('/submitcode', submitCode.handleSubmitCode(fs, hackerEarthApi));
+app.post('/submitcode', submitCode.handleSubmitCode(fs));
 // --
 
 // START SERVER
