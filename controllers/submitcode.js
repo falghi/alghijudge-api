@@ -31,17 +31,35 @@ const handleSubmitCode = (fs) => (req, resp) => {
                         } else {
                             let outputData = data;
                             config.input = inputData;
-                            hackerEarthApi.run(config, (err, response) => {
-                                if (err) {
-                                    reject(new Error(err));
-                                } else {
-                                    resolve({
-                                        input: inputData,
-                                        hasil: JSON.parse(response),
-                                        output: outputData
-                                    });
-                                }
-                            })
+                            if (i === 0) {
+                                hackerEarthApi.run(config, (err, response) => {
+                                    if (err) {
+                                        reject(new Error(err));
+                                    } else {
+                                        resolve({
+                                            input: inputData,
+                                            hasil: JSON.parse(response),
+                                            output: outputData
+                                        });
+                                    }
+                                });
+                            } else {
+                                promises[i-1].then(value => {
+                                    hackerEarthApi.run(config, (err, response) => {
+                                        if (err) {
+                                            reject(new Error(err));
+                                        } else {
+                                            resolve({
+                                                input: inputData,
+                                                hasil: JSON.parse(response),
+                                                output: outputData
+                                            });
+                                        }
+                                    })
+                                }).catch(error => {
+                                    reject(new Error(error));
+                                });
+                            }
                         }
                     });
                 }
@@ -49,7 +67,7 @@ const handleSubmitCode = (fs) => (req, resp) => {
         });
     }
 
-    Promise.all(promises).then(values => {
+    promises[numberOfCases-1].then(values => {
         resp.json(values);
     }).catch(error => {
         resp.json("failed");
