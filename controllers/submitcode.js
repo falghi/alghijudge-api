@@ -1,4 +1,5 @@
 const hackerEarth = require('hackerearth-node');
+let hackerEarthApi = new hackerEarth(process.env.HACKER_EARTH_API_KEY, '');
 
 numberOfCasesDict = {
     "TP-1 SDA 2019": 3
@@ -7,11 +8,7 @@ numberOfCasesDict = {
 const handleSubmitCode = (fs) => (req, resp) => {
     const { problemName, code } = req.body;
 
-    let hackerEarthApi = []
     numberOfCases = numberOfCasesDict[problemName];
-    for (let i = 0; i < numberOfCases; ++i) {
-        hackerEarthApi[i] = new hackerEarth(process.env.HACKER_EARTH_API_KEY, '');
-    }
 
     let config = {};
     config.time_limit = 3;
@@ -25,18 +22,18 @@ const handleSubmitCode = (fs) => (req, resp) => {
         promises[i] = new Promise((resolve, reject) => {
             fs.readFile(`static/${problemName}_in${i+1}`, 'utf8', (err, data) => {
                 if (err) {
-                    reject(new Error('failed'));
+                    reject(new Error(err));
                 } else {
                     let inputData = data;
                     fs.readFile(`static/${problemName}_out${i+1}`, 'utf8', (err, data) => {
                         if (err) {
-                            reject(new Error('failed'));
+                            reject(new Error(err));
                         } else {
                             let outputData = data;
                             config.input = inputData;
-                            hackerEarthApi[i].run(config, (err, response) => {
+                            hackerEarthApi.run(config, (err, response) => {
                                 if (err) {
-                                    reject(new Error('failed'));
+                                    reject(new Error(err));
                                 } else {
                                     resolve({
                                         input: inputData,
