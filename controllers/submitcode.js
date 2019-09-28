@@ -36,11 +36,11 @@ const handleSubmitCode = (fs) => (req, resp) => {
                                     if (err) {
                                         reject(new Error(err));
                                     } else {
-                                        resolve({
+                                        resolve([{
                                             input: inputData,
                                             hasil: JSON.parse(response),
                                             output: outputData
-                                        });
+                                        }]);
                                     }
                                 });
                             } else {
@@ -49,11 +49,12 @@ const handleSubmitCode = (fs) => (req, resp) => {
                                         if (err) {
                                             reject(new Error(err));
                                         } else {
-                                            resolve({
+                                            value.push({
                                                 input: inputData,
                                                 hasil: JSON.parse(response),
                                                 output: outputData
-                                            });
+                                            })
+                                            resolve(value);
                                         }
                                     })
                                 }).catch(error => {
