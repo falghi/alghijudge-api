@@ -1,0 +1,201 @@
+10
+KEREN 7
+coklat 25 15
+melon 18 27
+gula 27 19
+sushi 29 13
+strawberry 3 27
+dory 26 23
+gulali 13 22
+HEBAT 9
+melon 7 28
+sashimi 4 26
+burger 11 12
+strawberry 8 17
+coklat 4 21
+gulali 28 28
+gula 8 11
+sushi 4 23
+dory 19 13
+KUCING 6
+melon 8 16
+coklat 19 24
+sushi 8 28
+gulali 12 11
+strawberry 28 7
+gula 3 24
+MEONG 9
+melon 28 4
+gula 23 28
+coklat 16 3
+burger 2 11
+strawberry 20 22
+sushi 5 26
+sashimi 26 22
+dory 4 21
+gulali 24 11
+HOHO 2
+gula 16 16
+coklat 28 27
+HAHA 2
+gula 18 12
+coklat 26 28
+YOLO 8
+dory 21 28
+melon 12 13
+sushi 3 15
+coklat 1 24
+sashimi 12 29
+gula 27 2
+strawberry 23 13
+gulali 12 27
+ULTRAMAN 6
+melon 29 29
+gulali 13 21
+sushi 8 28
+gula 8 14
+strawberry 27 13
+coklat 14 18
+MEGAZORD 2
+coklat 10 2
+gula 4 27
+ZZZZ 9
+burger 8 27
+melon 9 28
+strawberry 21 21
+gula 7 29
+sushi 18 25
+gulali 6 1
+dory 26 8
+coklat 19 28
+sashimi 10 17
+10
+4
+KEREN YOLO KUCING HEBAT
+Target 29
+Duar 4
+HEBAT strawberry 3
+KEREN melon 15
+MEGAZORD gula 3
+MEONG sushi 3
+Restock 4
+ULTRAMAN meow 10 3
+ZZZZ meow 6 25
+HEBAT gula 20 1
+HAHA gula 18 6
+Transfer 1
+MEONG HAHA sushi 2
+1
+ZZZZ
+Target 18
+Duar 4
+MEGAZORD gula 1
+HEBAT burger 5
+KUCING sushi 6
+MEGAZORD coklat 3
+Restock 4
+MEGAZORD wkwkwk 8 5
+MEGAZORD burger 19 25
+MEGAZORD dory 21 3
+HOHO sushi 18 3
+Transfer 1
+ZZZZ HOHO sashimi 7
+10
+KEREN YOLO KUCING HAHA MEGAZORD ULTRAMAN ZZZZ MEONG HEBAT HOHO
+Target 1
+Duar 0
+Restock 0
+Transfer 3
+HEBAT ULTRAMAN sashimi 3
+HEBAT ULTRAMAN dory 12
+ULTRAMAN MEONG sushi 3
+8
+KEREN KUCING HAHA MEGAZORD ULTRAMAN ZZZZ MEONG HOHO
+Target 24
+Duar 4
+MEONG gulali 13
+YOLO sashimi 11
+HOHO sashimi 5
+YOLO sashimi 1
+Restock 2
+MEGAZORD shisamo 20 25
+HAHA dory 27 7
+Transfer 3
+MEGAZORD KUCING shisamo 14
+ULTRAMAN MEGAZORD gulali 9
+MEGAZORD ULTRAMAN shisamo 5
+7
+KUCING HAHA MEGAZORD ULTRAMAN MEONG HEBAT HOHO
+Target 7
+Duar 0
+Restock 0
+Transfer 3
+ULTRAMAN HOHO meow 5
+ULTRAMAN HOHO shisamo 1
+MEONG KEREN burger 2
+2
+HEBAT HOHO
+Target 17
+Duar 4
+ULTRAMAN sushi 0
+HEBAT coklat 4
+HEBAT gulali 13
+KEREN gulali 6
+Restock 4
+KUCING superdonat 28 6
+KUCING gulali 7 17
+ULTRAMAN burger 27 7
+ULTRAMAN gulali 14 13
+Transfer 1
+HAHA HEBAT coklat 26
+6
+KEREN HAHA MEGAZORD ULTRAMAN MEONG HEBAT
+Target 9
+Duar 3
+ULTRAMAN sashimi 0
+ULTRAMAN melon 17
+ULTRAMAN gula 1
+Restock 1
+MEGAZORD boom 14 3
+Transfer 4
+HOHO KUCING shisamo 1
+HOHO KEREN sashimi 1
+KUCING ZZZZ shisamo 8
+ULTRAMAN KUCING dory 12
+10
+KEREN YOLO KUCING HAHA MEGAZORD ULTRAMAN ZZZZ MEONG HEBAT HOHO
+Target 17
+Duar 3
+ZZZZ gula 2
+ZZZZ meow 1
+YOLO gulali 5
+Restock 1
+ZZZZ shisamo 6 1
+Transfer 3
+YOLO HOHO dory 9
+MEGAZORD ULTRAMAN gulali 2
+ZZZZ MEGAZORD sashimi 3
+8
+KEREN YOLO KUCING HAHA ULTRAMAN ZZZZ HEBAT HOHO
+Target 25
+Duar 3
+HOHO dory 6
+HAHA sushi 0
+MEGAZORD coklat 6
+Restock 3
+ULTRAMAN gulali 13 21
+MEGAZORD strawberry 1 27
+KUCING gulali 17 21
+Transfer 1
+ZZZZ YOLO meow 3
+2
+MEGAZORD MEONG
+Target 25
+Duar 1
+HAHA gula 10
+Restock 4
+KUCING keju 5 23
+KUCING kipas 24 6
+HAHA jaket 5 23
+ULTRAMAN strawberry 25 21
+Transfer 0

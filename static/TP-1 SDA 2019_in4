@@ -1,0 +1,79 @@
+5
+KEREN 3
+melon 2 8
+coklat 5 13
+gula 11 13
+HEBAT 1
+gula 12 10
+KUCING 2
+coklat 5 4
+gula 1 4
+MEONG 2
+gula 8 5
+coklat 10 5
+HOHO 4
+gula 3 14
+strawberry 3 11
+melon 5 2
+coklat 3 5
+5
+4
+KUCING MEONG HEBAT HOHO
+Target 18
+Duar 1
+MEONG coklat 0
+Restock 0
+Transfer 1
+KEREN KUCING melon 2
+3
+KEREN KUCING HEBAT
+Target 2
+Duar 4
+MEONG coklat 4
+MEONG coklat 5
+MEONG coklat 1
+HEBAT gula 10
+Restock 0
+Transfer 0
+4
+KEREN KUCING MEONG HOHO
+Target 11
+Duar 2
+HEBAT gula 0
+HOHO melon 5
+Restock 2
+HOHO strawberry 8 5
+KUCING strawberry 5 11
+Transfer 3
+KUCING KEREN melon 2
+HOHO HEBAT coklat 3
+KEREN HOHO melon 2
+3
+KEREN KUCING HEBAT
+Target 22
+Duar 3
+HOHO strawberry 3
+MEONG gula 0
+MEONG gula 5
+Restock 3
+MEONG sashimi 12 8
+HOHO melon 3 13
+HOHO gula 12 9
+Transfer 3
+MEONG KEREN sashimi 1
+HEBAT MEONG coklat 1
+KUCING KEREN strawberry 1
+1
+MEONG
+Target 14
+Duar 2
+MEONG sashimi 4
+KUCING gula 1
+Restock 2
+HOHO keju 9 4
+KEREN gula 14 9
+Transfer 4
+KUCING HOHO strawberry 2
+MEONG HEBAT sashimi 5
+MEONG HOHO coklat 1
+MEONG KUCING gula 2

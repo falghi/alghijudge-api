@@ -1,0 +1,466 @@
+15
+KEREN 1
+gula 45 27
+HEBAT 7
+gulali 40 26
+gula 29 14
+sushi 9 27
+dory 5 11
+melon 22 4
+strawberry 41 7
+coklat 6 38
+KUCING 9
+gula 6 12
+dory 36 38
+strawberry 30 39
+coklat 23 8
+sashimi 25 18
+melon 37 3
+sushi 10 1
+gulali 36 43
+burger 45 19
+MEONG 5
+gulali 49 47
+strawberry 35 2
+gula 11 12
+melon 21 29
+coklat 5 2
+HOHO 3
+coklat 49 44
+melon 32 19
+gula 16 20
+HAHA 7
+dory 45 42
+strawberry 44 2
+coklat 12 21
+gula 32 34
+melon 46 7
+sushi 15 13
+gulali 27 47
+YOLO 9
+sushi 6 39
+gula 27 20
+burger 24 35
+sashimi 30 7
+strawberry 40 13
+gulali 30 6
+dory 4 4
+coklat 31 5
+melon 12 4
+ULTRAMAN 4
+gula 32 27
+coklat 41 21
+melon 3 27
+strawberry 23 16
+MEGAZORD 7
+coklat 35 31
+gulali 29 1
+gula 16 40
+sushi 16 49
+melon 16 46
+strawberry 49 9
+dory 26 49
+ZZZZ 7
+coklat 48 39
+sushi 45 21
+gulali 11 25
+melon 3 22
+strawberry 40 20
+gula 1 28
+dory 39 29
+BASH 9
+sushi 41 37
+burger 31 45
+gula 29 16
+coklat 35 7
+gulali 49 30
+dory 18 25
+melon 8 38
+sashimi 1 33
+strawberry 20 36
+JAVA 6
+gulali 34 38
+gula 30 1
+sushi 40 16
+coklat 35 12
+melon 17 1
+strawberry 15 38
+PYTHON 2
+coklat 45 34
+gula 19 37
+CPP 7
+dory 41 35
+coklat 41 48
+sushi 43 27
+strawberry 23 25
+gula 6 36
+gulali 19 1
+melon 34 47
+GOLANG 4
+gula 27 47
+melon 37 25
+strawberry 11 40
+coklat 35 3
+10
+13
+KEREN JAVA KUCING CPP ZZZZ BASH MEONG PYTHON HEBAT HOHO GOLANG HAHA MEGAZORD
+Target 44
+Duar 10
+HOHO gula 0
+MEGAZORD gulali 21
+BASH sashimi 0
+PYTHON coklat 37
+YOLO strawberry 24
+MEONG strawberry 34
+YOLO gulali 30
+ULTRAMAN coklat 39
+YOLO melon 12
+GOLANG melon 18
+Restock 12
+CPP superdonat 47 18
+KUCING keju 31 22
+ULTRAMAN keju 41 17
+KUCING melon 30 46
+HOHO jaket 9 13
+BASH strawberry 20 45
+KEREN strawberry 11 33
+MEGAZORD sashimi 3 22
+JAVA dory 48 26
+KUCING gula 4 37
+PYTHON sashimi 19 38
+ZZZZ melon 45 36
+Transfer 11
+KUCING KEREN burger 25
+HAHA MEONG dory 45
+JAVA HOHO sushi 6
+HAHA PYTHON melon 2
+CPP MEGAZORD superdonat 19
+CPP GOLANG gulali 8
+YOLO HOHO gula 25
+GOLANG KEREN gulali 8
+CPP HOHO superdonat 22
+HOHO YOLO melon 1
+KUCING JAVA sashimi 1
+2
+ZZZZ MEONG
+Target 14
+Duar 14
+ULTRAMAN keju 29
+KEREN strawberry 5
+JAVA melon 3
+GOLANG gula 3
+KEREN gula 9
+ULTRAMAN strawberry 5
+HAHA melon 23
+YOLO gula 2
+ZZZZ dory 24
+GOLANG strawberry 5
+MEGAZORD dory 10
+HEBAT gulali 37
+GOLANG gula 18
+ZZZZ gula 1
+Restock 18
+GOLANG keju 14 26
+ULTRAMAN jaket 42 24
+KUCING gulali 1 46
+YOLO krispychrome 4 7
+BASH meow 5 11
+KUCING gula 16 15
+ZZZZ coklat 44 17
+BASH keju 41 12
+PYTHON shisamo 32 43
+MEGAZORD wkwkwk 1 23
+YOLO meow 45 44
+PYTHON dunkeen 33 35
+YOLO sushi 12 31
+MEGAZORD keju 12 30
+JAVA dory 49 6
+GOLANG jaket 35 37
+KUCING dory 4 21
+MEGAZORD sashimi 29 27
+Transfer 12
+ULTRAMAN KEREN melon 1
+ZZZZ GOLANG gulali 7
+MEONG PYTHON gulali 13
+ZZZZ MEONG sushi 37
+ULTRAMAN HAHA jaket 42
+YOLO ULTRAMAN sushi 5
+CPP KEREN sushi 43
+GOLANG KEREN keju 1
+ZZZZ HOHO dory 5
+ZZZZ GOLANG sushi 7
+MEGAZORD KEREN wkwkwk 1
+ULTRAMAN YOLO gula 5
+6
+KEREN KUCING HEBAT HOHO HAHA ULTRAMAN
+Target 7
+Duar 8
+JAVA strawberry 14
+GOLANG strawberry 6
+HEBAT gula 16
+YOLO sashimi 19
+PYTHON gulali 2
+KEREN sushi 27
+KUCING burger 11
+ULTRAMAN coklat 1
+Restock 12
+ZZZZ krispychrome 18 32
+ULTRAMAN dory 20 8
+GOLANG coklat 22 34
+CPP dory 30 38
+GOLANG krispychrome 12 19
+HAHA gula 30 12
+ULTRAMAN superdonat 24 17
+ULTRAMAN keju 28 16
+MEONG keju 41 6
+KUCING shisamo 37 23
+ZZZZ dory 21 44
+HAHA dunkeen 9 6
+Transfer 7
+ULTRAMAN HAHA keju 7
+HEBAT HOHO strawberry 28
+BASH HAHA dory 18
+PYTHON HOHO dunkeen 10
+HEBAT CPP sushi 1
+HAHA PYTHON gulali 7
+MEONG HEBAT keju 10
+10
+KEREN JAVA KUCING ZZZZ BASH MEONG PYTHON YOLO MEGAZORD ULTRAMAN
+Target 69
+Duar 4
+PYTHON melon 2
+GOLANG melon 7
+HEBAT keju 8
+BASH strawberry 14
+Restock 11
+PYTHON superdonat 34 11
+MEONG sushi 46 25
+HAHA burger 37 49
+GOLANG gulali 26 1
+JAVA gulali 44 36
+HEBAT sushi 16 34
+HOHO chicken 45 48
+KUCING dory 11 37
+KEREN burger 19 3
+ZZZZ strawberry 12 47
+GOLANG kipas 29 32
+Transfer 9
+MEONG KEREN coklat 3
+MEGAZORD PYTHON keju 8
+HOHO BASH superdonat 11
+HAHA HEBAT dunkeen 9
+YOLO MEONG sashimi 10
+PYTHON ZZZZ gula 17
+BASH GOLANG burger 27
+GOLANG MEONG jaket 7
+ULTRAMAN PYTHON sushi 1
+10
+KEREN JAVA KUCING CPP PYTHON HOHO YOLO GOLANG HAHA MEGAZORD
+Target 54
+Duar 2
+HEBAT strawberry 3
+PYTHON sushi 1
+Restock 11
+CPP coklat 44 34
+HEBAT chicken 30 35
+KEREN shisamo 46 49
+BASH chicken 13 48
+BASH wkwkwk 21 14
+KEREN keju 18 47
+BASH boom 38 10
+GOLANG krispychrome 30 33
+YOLO burger 45 31
+KEREN kipas 24 29
+JAVA melon 35 49
+Transfer 7
+HEBAT YOLO gulali 1
+MEGAZORD BASH superdonat 11
+KEREN CPP shisamo 9
+MEONG HAHA strawberry 1
+PYTHON CPP dunkeen 6
+MEGAZORD ZZZZ superdonat 2
+BASH PYTHON burger 4
+8
+KUCING ZZZZ MEONG HOHO YOLO GOLANG MEGAZORD ULTRAMAN
+Target 5
+Duar 9
+HOHO superdonat 6
+GOLANG coklat 8
+KUCING sashimi 5
+KEREN gulali 3
+YOLO gulali 0
+CPP sushi 1
+MEGAZORD superdonat 2
+PYTHON shisamo 23
+MEGAZORD dory 8
+Restock 13
+PYTHON gulali 16 34
+CPP gula 29 13
+KUCING shisamo 2 20
+YOLO dunkeen 26 5
+MEONG shisamo 41 8
+MEONG keju 18 29
+HAHA dory 39 26
+HAHA melon 28 17
+MEGAZORD gulali 47 35
+MEGAZORD dunkeen 49 41
+GOLANG krispychrome 24 23
+HAHA coklat 36 14
+MEGAZORD meow 32 26
+Transfer 15
+ZZZZ MEONG strawberry 28
+PYTHON ULTRAMAN gulali 11
+MEONG ZZZZ sushi 27
+KUCING GOLANG sashimi 17
+HEBAT ZZZZ keju 2
+CPP GOLANG strawberry 4
+MEONG HEBAT sashimi 1
+KUCING ULTRAMAN shisamo 12
+MEONG GOLANG dory 43
+HOHO YOLO melon 20
+ZZZZ CPP sushi 21
+KEREN ZZZZ burger 18
+PYTHON MEONG gulali 2
+MEGAZORD MEONG superdonat 4
+KUCING YOLO keju 20
+10
+KEREN JAVA KUCING ZZZZ BASH HEBAT HOHO YOLO GOLANG MEGAZORD
+Target 12
+Duar 0
+Restock 14
+ULTRAMAN kipas 38 33
+KUCING chicken 9 12
+PYTHON melon 1 23
+KUCING keju 32 9
+HAHA wkwkwk 47 32
+ZZZZ dory 43 12
+PYTHON keju 15 48
+KUCING dunkeen 18 2
+HAHA keju 41 33
+ZZZZ jaket 19 7
+JAVA boom 43 48
+HAHA jaket 5 42
+KUCING sashimi 39 39
+HOHO coklat 21 44
+Transfer 15
+PYTHON MEGAZORD burger 3
+HEBAT ZZZZ chicken 23
+PYTHON KEREN superdonat 15
+GOLANG CPP strawberry 2
+PYTHON MEONG gulali 4
+BASH ZZZZ boom 35
+MEGAZORD ULTRAMAN sashimi 3
+MEONG GOLANG superdonat 4
+YOLO HOHO gulali 1
+CPP MEGAZORD superdonat 3
+ULTRAMAN JAVA kipas 34
+ZZZZ KUCING krispychrome 7
+HEBAT ULTRAMAN chicken 7
+GOLANG YOLO kipas 26
+MEONG HAHA sashimi 7
+8
+CPP ZZZZ BASH HEBAT YOLO GOLANG HAHA MEGAZORD
+Target 62
+Duar 14
+CPP melon 19
+GOLANG coklat 2
+KEREN shisamo 27
+HOHO dunkeen 7
+ULTRAMAN sushi 1
+GOLANG gula 4
+KUCING krispychrome 1
+HAHA burger 13
+HEBAT sushi 5
+ZZZZ strawberry 5
+PYTHON superdonat 5
+HEBAT dunkeen 9
+JAVA strawberry 1
+CPP superdonat 0
+Restock 16
+PYTHON dunkeen 43 3
+KUCING chicken 25 31
+MEGAZORD meow 6 13
+KEREN coklat 40 44
+MEONG shisamo 38 30
+CPP jaket 5 42
+MEGAZORD keju 42 47
+KEREN coklat 13 2
+HOHO coklat 1 27
+JAVA chicken 47 34
+MEGAZORD dunkeen 7 25
+CPP dory 23 26
+HEBAT burger 13 26
+GOLANG superdonat 48 17
+JAVA gula 14 24
+MEGAZORD meow 21 4
+Transfer 4
+YOLO JAVA dunkeen 18
+ZZZZ ULTRAMAN boom 31
+MEGAZORD JAVA meow 24
+ZZZZ KUCING burger 14
+9
+KEREN JAVA KUCING CPP ZZZZ MEONG PYTHON HAHA MEGAZORD
+Target 35
+Duar 5
+CPP superdonat 3
+HEBAT burger 0
+HAHA sushi 0
+PYTHON keju 1
+ULTRAMAN boom 31
+Restock 16
+KEREN gulali 24 21
+YOLO dory 17 35
+BASH chicken 4 25
+MEONG boom 12 29
+KUCING gulali 45 1
+JAVA keju 40 20
+ULTRAMAN sushi 24 27
+JAVA burger 47 37
+MEONG superdonat 32 45
+PYTHON sushi 10 7
+KEREN krispychrome 30 38
+GOLANG gula 9 41
+YOLO boom 1 27
+PYTHON jaket 22 38
+KEREN krispychrome 7 21
+ULTRAMAN boom 35 25
+Transfer 7
+HOHO BASH dunkeen 3
+HOHO YOLO jaket 6
+YOLO MEONG burger 13
+HEBAT KEREN sashimi 1
+GOLANG YOLO superdonat 1
+MEONG KEREN jaket 1
+YOLO CPP keju 3
+7
+ZZZZ MEONG PYTHON HEBAT YOLO HAHA MEGAZORD
+Target 8
+Duar 8
+HOHO superdonat 5
+ULTRAMAN keju 5
+JAVA gula 17
+MEGAZORD superdonat 1
+GOLANG burger 14
+KUCING chicken 7
+CPP gulali 10
+KEREN gulali 0
+Restock 16
+PYTHON jaket 16 38
+KEREN keju 25 17
+MEGAZORD dunkeen 13 2
+JAVA keju 37 27
+YOLO gulali 37 45
+KUCING sushi 4 25
+HOHO gulali 4 18
+YOLO wkwkwk 15 33
+BASH sushi 45 7
+HAHA dunkeen 1 45
+HOHO boom 10 30
+GOLANG dory 14 25
+ZZZZ coklat 34 14
+YOLO burger 21 13
+HAHA coklat 31 14
+HOHO wkwkwk 16 8
+Transfer 2
+YOLO MEONG meow 44
+JAVA PYTHON dory 44

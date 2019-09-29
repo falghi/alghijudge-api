@@ -1,5 +1,5 @@
 numberOfCasesDict = {
-    "TP-1 SDA 2019": 3
+    "TP-1 SDA 2019": 10
 }
 
 const handleSubmitCode = (fs) => (req, resp) => {

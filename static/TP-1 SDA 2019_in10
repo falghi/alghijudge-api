@@ -1,0 +1,608 @@
+20
+KEREN 9
+strawberry 40 4
+coklat 47 31
+sashimi 59 92
+burger 77 45
+dory 97 30
+sushi 82 82
+gulali 39 22
+gula 23 38
+melon 96 92
+HEBAT 3
+gula 88 55
+melon 32 22
+coklat 73 62
+KUCING 3
+melon 59 82
+coklat 34 22
+gula 55 26
+MEONG 3
+coklat 29 51
+melon 45 70
+gula 29 63
+HOHO 2
+coklat 28 20
+gula 66 77
+HAHA 5
+coklat 12 71
+melon 34 28
+strawberry 57 13
+gulali 4 55
+gula 57 93
+YOLO 3
+coklat 62 73
+melon 36 54
+gula 23 94
+ULTRAMAN 6
+strawberry 55 75
+sushi 47 83
+gulali 5 61
+coklat 42 23
+gula 41 15
+melon 83 2
+MEGAZORD 7
+gula 62 30
+strawberry 1 16
+sushi 6 26
+coklat 71 57
+gulali 55 43
+melon 98 18
+dory 18 74
+ZZZZ 5
+melon 72 73
+strawberry 20 23
+gula 33 79
+gulali 11 27
+coklat 89 7
+BASH 7
+melon 89 18
+gulali 85 74
+strawberry 60 37
+coklat 26 51
+dory 68 93
+gula 40 21
+sushi 63 36
+JAVA 1
+gula 70 79
+PYTHON 9
+dory 41 56
+gula 96 55
+melon 81 93
+sushi 66 82
+burger 62 88
+sashimi 46 53
+gulali 28 90
+strawberry 8 48
+coklat 7 82
+CPP 3
+gula 20 36
+coklat 41 40
+melon 87 86
+GOLANG 7
+dory 88 66
+coklat 75 2
+gula 12 47
+melon 8 4
+sushi 99 26
+gulali 24 29
+strawberry 71 45
+DJANGO 4
+coklat 79 6
+gula 5 87
+strawberry 59 63
+melon 33 69
+PASCAL 6
+coklat 87 50
+gulali 81 84
+sushi 77 34
+melon 74 17
+strawberry 47 5
+gula 50 77
+HTML 2
+gula 43 5
+coklat 63 79
+CSS 3
+melon 88 77
+gula 39 75
+coklat 62 77
+JAVASCRIPT 7
+coklat 61 66
+gula 52 97
+gulali 62 1
+strawberry 12 40
+dory 88 42
+melon 60 26
+sushi 20 88
+10
+2
+CPP HTML
+Target 67
+Duar 1
+KUCING gula 6
+Restock 16
+HTML dory 89 26
+HOHO strawberry 91 61
+HEBAT strawberry 72 5
+GOLANG dory 56 91
+ULTRAMAN strawberry 60 18
+YOLO gula 58 96
+PYTHON melon 42 93
+CPP boom 89 70
+CPP krispychrome 73 1
+ZZZZ dunkeen 90 96
+ZZZZ dory 94 53
+MEGAZORD superdonat 74 82
+YOLO keju 79 87
+CSS coklat 32 87
+JAVA dunkeen 80 65
+BASH superdonat 40 19
+Transfer 15
+JAVASCRIPT HOHO gulali 27
+PASCAL JAVA strawberry 44
+PASCAL JAVA strawberry 1
+ZZZZ HEBAT dory 71
+KEREN HOHO sashimi 29
+JAVASCRIPT JAVA melon 9
+BASH KUCING superdonat 15
+PYTHON CSS sushi 7
+ULTRAMAN HTML sushi 23
+KEREN MEGAZORD sashimi 11
+PYTHON KUCING burger 18
+HTML KUCING dory 52
+JAVASCRIPT CSS strawberry 10
+JAVASCRIPT JAVA dory 15
+KEREN PASCAL sashimi 10
+9
+KUCING BASH MEONG PYTHON HEBAT HOHO HAHA MEGAZORD ULTRAMAN
+Target 39
+Duar 22
+YOLO keju 21
+KEREN gula 4
+PASCAL sashimi 4
+HEBAT gula 43
+YOLO melon 27
+CSS melon 55
+KUCING dory 11
+MEONG melon 40
+MEONG melon 3
+PASCAL gula 41
+MEGAZORD gula 53
+JAVA gula 25
+MEONG melon 2
+CSS melon 30
+DJANGO coklat 45
+PASCAL melon 2
+HEBAT coklat 8
+ULTRAMAN gula 15
+GOLANG melon 8
+KUCING superdonat 12
+JAVASCRIPT gula 28
+ULTRAMAN gulali 4
+Restock 23
+KEREN superdonat 34 81
+YOLO strawberry 29 52
+HOHO boom 4 76
+DJANGO dunkeen 92 11
+MEGAZORD gulali 82 59
+CSS keju 30 6
+DJANGO wkwkwk 59 87
+CPP wkwkwk 6 84
+ZZZZ superdonat 33 42
+MEGAZORD boom 10 73
+JAVA gulali 26 88
+ZZZZ krispychrome 21 29
+MEONG dory 87 65
+ULTRAMAN coklat 55 94
+YOLO boom 68 23
+HTML dunkeen 63 46
+JAVASCRIPT sushi 96 48
+CSS gulali 41 14
+MEONG keju 26 44
+MEGAZORD jaket 18 67
+HAHA sashimi 85 37
+YOLO jaket 34 87
+HTML meow 50 90
+Transfer 19
+CSS HEBAT sushi 7
+JAVA HEBAT gulali 18
+BASH HAHA sushi 21
+HOHO PASCAL boom 2
+KEREN YOLO burger 53
+ZZZZ MEONG dunkeen 89
+JAVASCRIPT CPP dory 67
+ULTRAMAN HTML sushi 5
+ZZZZ HTML strawberry 6
+KUCING JAVA burger 6
+KUCING YOLO superdonat 1
+DJANGO MEONG strawberry 49
+DJANGO HOHO dunkeen 17
+MEONG HAHA keju 16
+HTML ZZZZ strawberry 6
+KUCING HTML burger 9
+GOLANG HOHO sushi 49
+MEONG YOLO dory 35
+KEREN PASCAL sashimi 5
+11
+KUCING CSS BASH MEONG PYTHON HEBAT HOHO GOLANG PASCAL MEGAZORD ULTRAMAN
+Target 28
+Duar 3
+HOHO sashimi 20
+HEBAT dory 65
+ZZZZ melon 8
+Restock 13
+JAVASCRIPT boom 79 84
+YOLO jaket 31 26
+PASCAL wkwkwk 91 93
+HOHO meow 78 13
+CPP burger 16 12
+HEBAT keju 68 16
+ZZZZ chicken 57 88
+HTML chicken 73 50
+ZZZZ coklat 65 42
+MEONG keju 57 65
+HOHO superdonat 35 52
+DJANGO sushi 45 45
+HEBAT shisamo 10 36
+Transfer 16
+MEGAZORD DJANGO dory 17
+JAVASCRIPT MEONG gulali 3
+ZZZZ HAHA dory 10
+KEREN JAVA sashimi 2
+KEREN MEGAZORD burger 1
+ZZZZ HEBAT dory 10
+ULTRAMAN YOLO sushi 19
+MEGAZORD DJANGO superdonat 2
+CSS DJANGO keju 11
+ZZZZ YOLO chicken 12
+ZZZZ KUCING krispychrome 4
+ULTRAMAN CPP strawberry 36
+CPP HAHA boom 29
+BASH CSS sushi 37
+HOHO MEONG meow 46
+YOLO CPP keju 28
+9
+JAVASCRIPT KUCING CPP HTML MEONG HOHO PASCAL HAHA MEGAZORD
+Target 16
+Duar 11
+HOHO superdonat 14
+JAVASCRIPT strawberry 1
+DJANGO dunkeen 44
+ULTRAMAN strawberry 11
+DJANGO dory 11
+HAHA coklat 3
+PASCAL sashimi 1
+JAVA dory 13
+MEONG dunkeen 78
+KUCING superdonat 1
+JAVA gula 6
+Restock 15
+DJANGO superdonat 70 67
+PYTHON melon 92 38
+HEBAT dory 40 49
+DJANGO keju 32 62
+JAVASCRIPT dory 6 82
+CPP boom 6 44
+CSS sashimi 54 85
+YOLO burger 71 61
+ZZZZ dunkeen 4 30
+PASCAL dory 12 30
+GOLANG chicken 5 23
+CSS wkwkwk 29 50
+HTML strawberry 32 30
+KEREN sushi 54 4
+CPP chicken 91 70
+Transfer 28
+BASH ULTRAMAN sushi 2
+MEGAZORD BASH boom 10
+MEONG PYTHON meow 30
+JAVASCRIPT HOHO melon 41
+ULTRAMAN YOLO gulali 1
+HAHA JAVASCRIPT sashimi 75
+MEONG PASCAL dunkeen 6
+ZZZZ HTML krispychrome 5
+PASCAL HEBAT boom 1
+JAVASCRIPT YOLO sashimi 42
+HTML CSS chicken 60
+JAVA BASH sashimi 2
+JAVASCRIPT HEBAT sashimi 30
+MEGAZORD MEONG sushi 4
+YOLO GOLANG superdonat 1
+BASH ZZZZ boom 6
+HEBAT PASCAL shisamo 7
+GOLANG CPP superdonat 1
+JAVA ZZZZ burger 5
+HEBAT PASCAL shisamo 1
+DJANGO MEGAZORD dunkeen 11
+HAHA JAVA boom 15
+KUCING HOHO krispychrome 4
+MEONG JAVASCRIPT dunkeen 5
+MEGAZORD KUCING gulali 43
+HOHO KUCING krispychrome 1
+HEBAT GOLANG boom 1
+ZZZZ HOHO chicken 28
+5
+KUCING CSS ZZZZ HTML YOLO
+Target 51
+Duar 19
+HOHO dunkeen 0
+HEBAT gulali 17
+DJANGO melon 27
+KEREN sushi 39
+HAHA gula 13
+MEONG keju 0
+HTML coklat 59
+PASCAL coklat 49
+PYTHON melon 66
+HAHA sushi 8
+PYTHON meow 27
+YOLO burger 47
+CPP wkwkwk 6
+CSS gula 14
+DJANGO sushi 38
+ULTRAMAN sushi 0
+DJANGO sushi 7
+CSS keju 19
+PYTHON coklat 2
+Restock 16
+HOHO sashimi 31 95
+HOHO superdonat 31 68
+BASH dunkeen 60 99
+ULTRAMAN dunkeen 89 76
+JAVASCRIPT gulali 85 27
+KEREN strawberry 33 49
+DJANGO chicken 81 83
+MEONG wkwkwk 59 15
+BASH melon 88 43
+KUCING boom 96 87
+HAHA strawberry 28 55
+KUCING wkwkwk 22 78
+HEBAT gulali 50 6
+HEBAT jaket 86 51
+PASCAL kipas 32 48
+ULTRAMAN dory 66 9
+Transfer 3
+DJANGO CSS superdonat 2
+HOHO MEGAZORD meow 3
+DJANGO HAHA wkwkwk 36
+3
+JAVASCRIPT MEONG PYTHON
+Target 78
+Duar 1
+HTML strawberry 14
+Restock 15
+MEGAZORD chicken 13 91
+KEREN burger 78 56
+KUCING jaket 65 64
+ULTRAMAN dory 40 97
+PYTHON dory 61 40
+JAVA melon 91 37
+YOLO burger 68 23
+DJANGO sushi 1 70
+HOHO gulali 42 49
+PASCAL keju 85 84
+KEREN gulali 79 70
+PASCAL shisamo 47 98
+KUCING gula 54 95
+GOLANG gulali 12 8
+DJANGO superdonat 20 69
+Transfer 22
+CSS JAVASCRIPT superdonat 2
+DJANGO CPP sushi 1
+HAHA PYTHON keju 1
+PYTHON BASH burger 16
+HOHO MEONG boom 2
+HTML GOLANG burger 6
+YOLO DJANGO sashimi 27
+HAHA KUCING sashimi 8
+JAVASCRIPT HOHO melon 10
+MEONG MEGAZORD wkwkwk 17
+GOLANG HOHO sushi 23
+ZZZZ MEONG superdonat 5
+PASCAL HAHA dunkeen 2
+PASCAL JAVA coklat 20
+KUCING JAVASCRIPT melon 17
+YOLO ZZZZ sashimi 11
+JAVA HOHO burger 1
+HEBAT PASCAL jaket 31
+PYTHON HAHA keju 1
+MEONG HTML superdonat 5
+MEGAZORD MEONG sashimi 10
+MEGAZORD HAHA superdonat 42
+8
+JAVASCRIPT CPP CSS ZZZZ BASH PYTHON HEBAT PASCAL
+Target 57
+Duar 22
+PASCAL boom 0
+HTML gula 28
+MEONG gula 4
+MEONG keju 10
+HTML chicken 6
+CSS coklat 12
+DJANGO gula 5
+PYTHON melon 29
+CPP gula 3
+BASH gulali 19
+HTML sushi 7
+JAVASCRIPT dory 4
+KEREN burger 0
+HTML dory 34
+KEREN melon 77
+JAVASCRIPT dory 1
+MEGAZORD meow 1
+PYTHON coklat 2
+CSS coklat 33
+HEBAT dory 5
+KEREN sushi 3
+PASCAL wkwkwk 65
+Restock 7
+CSS burger 45 72
+MEGAZORD keju 86 48
+CSS wkwkwk 80 69
+HTML wkwkwk 72 71
+GOLANG krispychrome 96 4
+YOLO chicken 5 60
+HEBAT keju 60 68
+Transfer 15
+ULTRAMAN CPP strawberry 5
+KEREN HOHO dory 58
+KUCING HAHA krispychrome 1
+KUCING ZZZZ jaket 61
+PYTHON PASCAL meow 1
+HOHO PASCAL chicken 15
+CSS MEONG chicken 40
+HEBAT KEREN sushi 2
+MEONG ULTRAMAN boom 1
+ZZZZ PYTHON krispychrome 8
+JAVA HAHA boom 5
+BASH KUCING superdonat 25
+KUCING BASH burger 1
+HEBAT JAVASCRIPT shisamo 1
+GOLANG HTML gulali 17
+1
+PYTHON
+Target 25
+Duar 4
+HOHO coklat 25
+PASCAL boom 1
+MEGAZORD dory 1
+CPP chicken 61
+Restock 29
+GOLANG gulali 83 46
+DJANGO meow 16 35
+YOLO jaket 43 15
+DJANGO dunkeen 75 41
+CPP superdonat 19 60
+MEONG gula 15 25
+ZZZZ strawberry 94 52
+ZZZZ meow 43 3
+ZZZZ chicken 12 21
+JAVA krispychrome 82 36
+HTML gulali 31 70
+GOLANG kipas 62 9
+GOLANG krispychrome 46 71
+YOLO wkwkwk 23 65
+PASCAL coklat 69 10
+YOLO keju 63 87
+ZZZZ meow 54 61
+CPP sushi 58 57
+PASCAL boom 91 35
+YOLO dory 92 98
+HOHO jaket 94 85
+CPP chicken 24 73
+HEBAT meow 89 56
+MEGAZORD gula 46 42
+PYTHON sushi 88 75
+ULTRAMAN wkwkwk 33 91
+HTML kipas 48 21
+MEGAZORD burger 76 97
+KUCING dory 88 10
+Transfer 11
+JAVASCRIPT DJANGO sashimi 2
+HEBAT BASH shisamo 1
+PASCAL HTML keju 68
+HOHO MEONG superdonat 17
+MEONG CPP gulali 1
+KUCING HOHO wkwkwk 20
+HEBAT CSS dory 5
+HAHA HOHO boom 14
+MEGAZORD KEREN keju 62
+PASCAL ULTRAMAN jaket 1
+MEGAZORD DJANGO gulali 7
+3
+KUCING GOLANG MEGAZORD
+Target 87
+Duar 7
+MEONG gulali 2
+MEGAZORD gula 7
+CPP chicken 7
+ZZZZ coklat 61
+MEONG dory 10
+HTML wkwkwk 24
+PASCAL jaket 9
+Restock 26
+JAVA gulali 26 76
+GOLANG gulali 87 65
+DJANGO burger 7 91
+YOLO krispychrome 2 62
+HAHA melon 13 26
+ULTRAMAN sushi 76 82
+CSS coklat 77 86
+HTML meow 5 22
+ZZZZ coklat 75 10
+KEREN shisamo 17 46
+MEGAZORD boom 18 95
+CSS gula 19 66
+ULTRAMAN sashimi 40 11
+HAHA chicken 34 43
+ULTRAMAN gulali 89 26
+BASH coklat 74 43
+PASCAL kipas 6 60
+GOLANG gula 64 40
+MEONG melon 17 52
+HTML coklat 85 72
+JAVA wkwkwk 57 44
+ZZZZ gulali 80 58
+JAVASCRIPT dunkeen 58 15
+ULTRAMAN keju 71 41
+YOLO sashimi 32 3
+GOLANG wkwkwk 63 99
+Transfer 14
+ULTRAMAN GOLANG jaket 1
+MEONG BASH sashimi 5
+CSS KUCING chicken 8
+YOLO JAVA keju 80
+HOHO CPP jaket 45
+BASH KUCING sushi 2
+HOHO MEGAZORD sushi 27
+JAVASCRIPT CSS dunkeen 1
+BASH HTML burger 12
+ZZZZ CPP sashimi 6
+MEGAZORD GOLANG melon 5
+ZZZZ HEBAT sashimi 2
+PYTHON MEGAZORD meow 2
+DJANGO MEONG keju 1
+11
+KEREN JAVA DJANGO CSS ZZZZ MEONG HOHO YOLO PASCAL HAHA MEGAZORD
+Target 41
+Duar 11
+KUCING chicken 1
+ULTRAMAN gulali 6
+HTML superdonat 3
+DJANGO wkwkwk 23
+HTML gula 15
+CSS dory 1
+PASCAL gulali 39
+HAHA boom 4
+CSS dory 1
+HTML superdonat 2
+KUCING dory 23
+Restock 6
+BASH boom 47 78
+PYTHON sashimi 85 37
+GOLANG krispychrome 77 49
+HEBAT jaket 34 58
+JAVA keju 16 76
+KUCING melon 22 51
+Transfer 21
+YOLO HEBAT sashimi 4
+BASH HTML shisamo 1
+HOHO JAVASCRIPT jaket 18
+PYTHON KUCING strawberry 1
+JAVASCRIPT CSS boom 31
+HEBAT KUCING meow 58
+HOHO YOLO meow 12
+CPP CSS krispychrome 45
+ULTRAMAN ZZZZ keju 5
+JAVASCRIPT HEBAT sashimi 1
+JAVASCRIPT CSS shisamo 1
+HTML KEREN wkwkwk 20
+CPP KEREN chicken 19
+CPP PYTHON superdonat 1
+MEGAZORD YOLO dunkeen 7
+DJANGO ULTRAMAN burger 6
+YOLO ZZZZ wkwkwk 8
+CSS HEBAT boom 18
+BASH YOLO sashimi 4
+HOHO PASCAL sashimi 4
+ZZZZ HAHA krispychrome 2
