@@ -1,80 +1,94 @@
-const hackerEarth = require('hackerearth-node');
-let hackerEarthApi = new hackerEarth(process.env.HACKER_EARTH_API_KEY, '');
-
 numberOfCasesDict = {
     "TP-1 SDA 2019": 3
 }
 
 const handleSubmitCode = (fs) => (req, resp) => {
-    const { problemName, code } = req.body;
+    let {java} = require('compile-run');
+
+    let { problemName, code } = req.body;
 
     numberOfCases = numberOfCasesDict[problemName];
 
-    let configList = [];
-    let promises = [];
-    for (let i = 0; i < numberOfCases; ++i) {
-        configList[i] = {}
-        configList[i].time_limit = 3;
-        configList[i].memory_limit = 323244;
-        configList[i].source = code;
-        configList[i].input = "";
-        configList[i].language = "JAVA";
+    let newClassName = makeid(10);
+    let codePath = "user_codes/" + newClassName + ".java";
+    while (fs.existsSync(codePath)) {
+        newClassName = makeid(10);
+        codePath = newClassName + ".java";
+    }
+    code = renameClass(code, newClassName);
 
-        promises[i] = new Promise((resolve, reject) => {
-            fs.readFile(`static/${problemName}_in${i+1}`, 'utf8', (err, data) => {
-                if (err) {
-                    reject(new Error(err));
-                } else {
-                    let inputData = data;
-                    fs.readFile(`static/${problemName}_out${i+1}`, 'utf8', (err, data) => {
-                        if (err) {
-                            reject(new Error(err));
-                        } else {
-                            let outputData = data;
-                            configList[i].input = inputData;
-                            if (i === 0) {
-                                hackerEarthApi.run(configList[i], (err, response) => {
-                                    if (err) {
+    fs.writeFile(codePath, code, (writeError) => {
+        if (writeError) {
+            resp.json("failed");
+            return;
+        }
+        let promises = [];
+        for (let i = 0; i < numberOfCases; ++i) {
+            promises[i] = new Promise((resolve, reject) => {
+                fs.readFile(`static/${problemName}_in${i+1}`, 'utf8', (err, data) => {
+                    if (err) {
+                        reject(new Error(err));
+                    } else {
+                        let inputData = data;
+                        fs.readFile(`static/${problemName}_out${i+1}`, 'utf8', (err, data) => {
+                            if (err) {
+                                reject(new Error(err));
+                            } else {
+                                let outputData = data;
+                                java.runFile(codePath, {
+                                    stdin: inputData,
+                                    compileTimeout: 10000
+                                }, (err, result) => {
+                                    if(err) {
                                         reject(new Error(err));
-                                    } else {
-                                        resolve([{
+                                    }
+                                    else{
+                                        resolve({
                                             input: inputData,
-                                            hasil: JSON.parse(response),
-                                            output: outputData
-                                        }]);
+                                            expectedOutput: outputData,
+                                            programOutput: result
+                                        });
                                     }
                                 });
-                            } else {
-                                promises[i-1].then(value => {
-                                    hackerEarthApi.run(configList[i], (err, response) => {
-                                        if (err) {
-                                            reject(new Error(err));
-                                        } else {
-                                            value.push({
-                                                input: inputData,
-                                                hasil: JSON.parse(response),
-                                                output: outputData
-                                            })
-                                            resolve(value);
-                                        }
-                                    })
-                                }).catch(error => {
-                                    reject(new Error(error));
-                                });
                             }
-                        }
-                    });
-                }
+                        });
+                    }
+                });
             });
-        });
-    }
+        }
 
-    promises[numberOfCases-1].then(values => {
-        resp.json(values);
-    }).catch(error => {
-        resp.json("failed");
-    });
+        Promise.all(promises).then(values => {
+            resp.json(values);
+        }).catch(error => {
+            resp.json("failed");
+        });
+    })
 }
+
+function renameClass(code, newClassName) {
+    let targetSubstring = "public class ";
+    for (let i = 0; i < code.length; ++i) {
+        if (code.substring(i, targetSubstring.length+i) === targetSubstring) {
+            let beforeCode = code.slice(0, i);
+            let tempCode = code.slice(i, code.length);
+            let afterCode = tempCode.slice(tempCode.search('{'), tempCode.length);
+            code = beforeCode + "public class " + newClassName + " " + afterCode;
+            break;
+        }
+    }
+    return code;
+}
+
+function makeid(length) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+       result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+ }
+ 
 
 module.exports = {
 	handleSubmitCode: handleSubmitCode
