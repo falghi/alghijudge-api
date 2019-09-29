@@ -82,8 +82,10 @@ const handleSubmitCode = (fs) => (req, resp) => {
         }
 
         promises[numberOfCases-1].then(values => {
+            fs.unlinkSync(codePath);
             resp.json(values);
         }).catch(error => {
+            fs.unlinkSync(codePath);
             resp.json("failed");
         });
     })
