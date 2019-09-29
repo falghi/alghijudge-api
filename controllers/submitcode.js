@@ -35,21 +35,45 @@ const handleSubmitCode = (fs) => (req, resp) => {
                                 reject(new Error(err));
                             } else {
                                 let outputData = data;
-                                java.runFile(codePath, {
-                                    stdin: inputData,
-                                    compileTimeout: 10000
-                                }, (err, result) => {
-                                    if(err) {
-                                        reject(new Error(err));
-                                    }
-                                    else{
-                                        resolve({
-                                            input: inputData,
-                                            expectedOutput: outputData,
-                                            programOutput: result
+
+                                if (i === 0) {
+                                    java.runFile(codePath, {
+                                        stdin: inputData,
+                                        compileTimeout: 10000
+                                    }, (err, result) => {
+                                        if(err) {
+                                            reject(new Error(err));
+                                        }
+                                        else{
+                                            resolve([{
+                                                input: inputData,
+                                                expectedOutput: outputData,
+                                                programOutput: result
+                                            }]);
+                                        }
+                                    });
+                                } else {
+                                    promises[i-1].then(value => {
+                                        java.runFile(codePath, {
+                                            stdin: inputData,
+                                            compileTimeout: 10000
+                                        }, (err, result) => {
+                                            if(err) {
+                                                reject(new Error(err));
+                                            }
+                                            else{
+                                                value.push({
+                                                    input: inputData,
+                                                    expectedOutput: outputData,
+                                                    programOutput: result
+                                                });
+                                                resolve(value);
+                                            }
                                         });
-                                    }
-                                });
+                                    }).catch(err => {
+                                        reject(err);
+                                    });
+                                }
                             }
                         });
                     }
@@ -57,7 +81,7 @@ const handleSubmitCode = (fs) => (req, resp) => {
             });
         }
 
-        Promise.all(promises).then(values => {
+        promises[numberOfCases-1].then(values => {
             resp.json(values);
         }).catch(error => {
             resp.json("failed");
