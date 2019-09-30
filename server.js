@@ -18,7 +18,7 @@ const DEBUG = true;
 const PORT = process.env.PORT || 3001;
 
 var sso = new SSO({
-    url: 'https://alghijudgeapi.herokuapp.com', //required
+    url: process.env.FRONT_END_URL_FULL, //required
     session_sso: 'sso_user' // defaults to sso_user
 });
 // --
@@ -53,7 +53,7 @@ Github: <a href="https://github.com/darklordace/alghijudge-api">https://github.c
 });
 
 app.get('/login', sso.login, function(req, res) {
-    res.redirect(process.env.FRONT_END_URL_FULL);
+    res.redirect('/');
 });
  
 app.get('/user', sso.login, function(req, res) {
