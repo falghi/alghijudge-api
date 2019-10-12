@@ -50,6 +50,15 @@ const handleSubmitCode = (fs) => (req, resp) => {
                                             if (outputData === result.stdout) {
                                                 isAccepted = "AC";
                                             }
+                                            if (inputData.length >= 100000) {
+                                                inputData = `https://raw.githubusercontent.com/darklordace/alghijudge-api/tree/master/static/${problemName}/in${i+1}`;
+                                            }
+                                            if (outputData.length >= 100000) {
+                                                outputData = `https://raw.githubusercontent.com/darklordace/alghijudge-api/tree/master/static/${problemName}/out${i+1}`;
+                                            }
+                                            if (result.stdout.length >= 100000) {
+                                                result.stdout = "The result is too large to display";
+                                            }
                                             resolve([{
                                                 input: inputData,
                                                 expectedOutput: outputData,
