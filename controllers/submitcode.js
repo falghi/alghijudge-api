@@ -1,7 +1,8 @@
 const {java} = require('compile-run');
 
 numberOfCasesDict = {
-    "TP-1 SDA 2019": 10
+    "TP-1 SDA 2019": 10,
+    "TP-2 SDA 2019": 3
 }
 
 const handleSubmitCode = (fs) => (req, resp) => {
@@ -13,7 +14,7 @@ const handleSubmitCode = (fs) => (req, resp) => {
     let codePath = "user_codes/" + newClassName + ".java";
     while (fs.existsSync(codePath)) {
         newClassName = makeid(10);
-        codePath = newClassName + ".java";
+        codePath = "user_codes/" + newClassName + ".java";
     }
     code = renameClass(code, newClassName);
 
@@ -25,12 +26,12 @@ const handleSubmitCode = (fs) => (req, resp) => {
         let promises = [];
         for (let i = 0; i < numberOfCases; ++i) {
             promises[i] = new Promise((resolve, reject) => {
-                fs.readFile(`static/${problemName}_in${i+1}`, 'utf8', (err, data) => {
+                fs.readFile(`static/${problemName}/in${i+1}`, 'utf8', (err, data) => {
                     if (err) {
                         reject(new Error(err));
                     } else {
                         let inputData = data;
-                        fs.readFile(`static/${problemName}_out${i+1}`, 'utf8', (err, data) => {
+                        fs.readFile(`static/${problemName}/out${i+1}`, 'utf8', (err, data) => {
                             if (err) {
                                 reject(new Error(err));
                             } else {
@@ -113,8 +114,8 @@ function makeid(length) {
        result += characters.charAt(Math.floor(Math.random() * charactersLength));
     }
     return result;
- }
- 
+}
+
 
 module.exports = {
 	handleSubmitCode: handleSubmitCode

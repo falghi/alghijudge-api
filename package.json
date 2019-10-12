@@ -27,7 +27,6 @@
     "cors": "^2.8.5",
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
-    "hackerearth-node": "^2.3.9",
-    "sso-ui": "^1.0.0"
+    "hackerearth-node": "^2.3.9"
   }
 }

@@ -4,11 +4,14 @@
 /node_modules
 /.pnp
 .pnp.js
+/.settings
 
 # testing
 /coverage
 
 # misc
+.classpath
+.project
 .DS_Store
 .env.local
 .env.development.local
