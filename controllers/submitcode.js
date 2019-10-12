@@ -2,7 +2,7 @@ const {java} = require('compile-run');
 
 numberOfCasesDict = {
     "TP-1 SDA 2019": 10,
-    "TP-2 SDA 2019": 3
+    "TP-2 SDA 2019": 5
 }
 
 const handleSubmitCode = (fs) => (req, resp) => {
@@ -46,10 +46,15 @@ const handleSubmitCode = (fs) => (req, resp) => {
                                             reject(new Error(err));
                                         }
                                         else{
+                                            let isAccepted = "WA";
+                                            if (outputData === result.stdout) {
+                                                isAccepted = "AC";
+                                            }
                                             resolve([{
                                                 input: inputData,
                                                 expectedOutput: outputData,
-                                                programOutput: result
+                                                programOutput: result,
+                                                isAccepted: isAccepted
                                             }]);
                                         }
                                     });
@@ -63,10 +68,24 @@ const handleSubmitCode = (fs) => (req, resp) => {
                                                 reject(new Error(err));
                                             }
                                             else{
+                                                let isAccepted = "WA";
+                                                if (outputData === result.stdout) {
+                                                    isAccepted = "AC";
+                                                }
+                                                if (inputData.length >= 100000) {
+                                                    inputData = `https://raw.githubusercontent.com/darklordace/alghijudge-api/tree/master/static/${problemName}/in${i+1}`;
+                                                }
+                                                if (outputData.length >= 100000) {
+                                                    outputData = `https://raw.githubusercontent.com/darklordace/alghijudge-api/tree/master/static/${problemName}/out${i+1}`;
+                                                }
+                                                if (result.stdout.length >= 100000) {
+                                                    result.stdout = "The result is too large to display";
+                                                }
                                                 value.push({
                                                     input: inputData,
                                                     expectedOutput: outputData,
-                                                    programOutput: result
+                                                    programOutput: result,
+                                                    isAccepted: isAccepted
                                                 });
                                                 resolve(value);
                                             }
