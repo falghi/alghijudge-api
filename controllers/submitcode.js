@@ -154,8 +154,8 @@ function makeid(length) {
 
 function removeTrailing(text) {
     let result = text.split('\r\n').map(x => x.trim()).join('\n');
-    result = text.split('\n').map(x => x.trim()).join('\n');
-    result = text.split('\r').map(x => x.trim()).join('\n');
+    result = result.split('\n').map(x => x.trim()).join('\n');
+    result = result.split('\r').map(x => x.trim()).join('\n');
     return result;
 }
 
