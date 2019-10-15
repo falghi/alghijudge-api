@@ -46,6 +46,10 @@ const handleSubmitCode = (fs) => (req, resp) => {
                                             reject(new Error(err));
                                         }
                                         else{
+                                            result.stdout = removeTrailing(result.stdout);
+                                            outputData = removeTrailing(outputData);     
+                                            inputData = removeTrailing(inputData);                                       
+
                                             let isAccepted = "WA";
                                             if (outputData === result.stdout) {
                                                 isAccepted = "AC";
@@ -77,6 +81,10 @@ const handleSubmitCode = (fs) => (req, resp) => {
                                                 reject(new Error(err));
                                             }
                                             else{
+                                                result.stdout = removeTrailing(result.stdout);
+                                                outputData = removeTrailing(outputData);     
+                                                inputData = removeTrailing(inputData);
+                                                
                                                 let isAccepted = "WA";
                                                 if (outputData === result.stdout) {
                                                     isAccepted = "AC";
@@ -144,6 +152,12 @@ function makeid(length) {
     return result;
 }
 
+function removeTrailing(text) {
+    let result = text.split('\r\n').map(x => x.trimEnd()).join('\r\n');
+    result = text.split('\n').map(x => x.trimEnd()).join('\n');
+    result = text.split('\r').map(x => x.trimEnd()).join('\r');
+    return result;
+}
 
 module.exports = {
 	handleSubmitCode: handleSubmitCode
