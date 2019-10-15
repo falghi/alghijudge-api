@@ -84,7 +84,7 @@ const handleSubmitCode = (fs) => (req, resp) => {
                                                 result.stdout = removeTrailing(result.stdout);
                                                 outputData = removeTrailing(outputData);     
                                                 inputData = removeTrailing(inputData);
-                                                
+
                                                 let isAccepted = "WA";
                                                 if (outputData === result.stdout) {
                                                     isAccepted = "AC";
@@ -153,9 +153,9 @@ function makeid(length) {
 }
 
 function removeTrailing(text) {
-    let result = text.split('\r\n').map(x => x.trimEnd()).join('\r\n');
-    result = text.split('\n').map(x => x.trimEnd()).join('\n');
-    result = text.split('\r').map(x => x.trimEnd()).join('\r');
+    let result = text.split('\r\n').map(x => x.trim()).join('\n');
+    result = text.split('\n').map(x => x.trim()).join('\n');
+    result = text.split('\r').map(x => x.trim()).join('\n');
     return result;
 }
 
