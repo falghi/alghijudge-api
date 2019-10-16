@@ -58,7 +58,7 @@ const handleSubmitCode = (fs, submitRecord) => (req, resp) => {
                                             inputData = removeTrailing(inputData);
 
                                             let isAccepted = "WA";
-                                            if (result.exitCode === null) {
+                                            if (result.exitCode === null || result.exitCode === 143) {
                                                 isAccepted = "TLE";
                                             } else if (result.exitCode !== 0) {
                                                 if (result.errorType === "run-time") {
