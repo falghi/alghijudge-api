@@ -2,10 +2,10 @@ const {java} = require('compile-run');
 
 numberOfCasesDict = {
     "TP-1 SDA 2019": 10,
-    "TP-2 SDA 2019": 10
+    "TP-2 SDA 2019": 15
 }
 
-const handleSubmitCode = (fs) => (req, resp) => {
+const handleSubmitCode = (fs, submitRecord) => (req, resp) => {
     let { problemName, code } = req.body;
 
     numberOfCases = numberOfCasesDict[problemName];
@@ -17,10 +17,17 @@ const handleSubmitCode = (fs) => (req, resp) => {
         codePath = "user_codes/" + newClassName + ".java";
     }
     code = renameClass(code, newClassName);
+    submitRecord[newClassName] = {};
+    submitRecord[newClassName]['finished'] = false;
+    submitRecord[newClassName]['failed'] = false;
+    submitRecord[newClassName]['result'] = [];
+    resp.json({
+        recordName: newClassName
+    })
 
     fs.writeFile(codePath, code, (writeError) => {
         if (writeError) {
-            resp.json("failed");
+            submitRecord[newClassName]['failed'] = true;
             return;
         }
         let promises = [];
@@ -48,7 +55,7 @@ const handleSubmitCode = (fs) => (req, resp) => {
                                         else{
                                             result.stdout = removeTrailing(result.stdout);
                                             outputData = removeTrailing(outputData);     
-                                            inputData = removeTrailing(inputData);                                       
+                                            inputData = removeTrailing(inputData);
 
                                             let isAccepted = "WA";
                                             if (outputData === result.stdout) {
@@ -63,12 +70,13 @@ const handleSubmitCode = (fs) => (req, resp) => {
                                             if (result.stdout.length >= 100000) {
                                                 result.stdout = "The result is too large to display";
                                             }
-                                            resolve([{
+                                            submitRecord[newClassName]['result'].push({
                                                 input: inputData,
                                                 expectedOutput: outputData,
                                                 programOutput: result,
                                                 isAccepted: isAccepted
-                                            }]);
+                                            });
+                                            resolve(i);
                                         }
                                     });
                                 } else {
@@ -98,13 +106,13 @@ const handleSubmitCode = (fs) => (req, resp) => {
                                                 if (result.stdout.length >= 100000) {
                                                     result.stdout = "The result is too large to display";
                                                 }
-                                                value.push({
+                                                submitRecord[newClassName]['result'].push({
                                                     input: inputData,
                                                     expectedOutput: outputData,
                                                     programOutput: result,
                                                     isAccepted: isAccepted
                                                 });
-                                                resolve(value);
+                                                resolve(i);
                                             }
                                         });
                                     }).catch(err => {
@@ -120,10 +128,11 @@ const handleSubmitCode = (fs) => (req, resp) => {
 
         promises[numberOfCases-1].then(values => {
             fs.unlinkSync(codePath);
-            resp.json(values);
+            submitRecord[newClassName]['finished'] = true;
         }).catch(error => {
             fs.unlinkSync(codePath);
-            resp.json("failed");
+            submitRecord[newClassName]['failed'] = true;
+            submitRecord[newClassName]['finished'] = true;
         });
     })
 }

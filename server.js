@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const fs = require('fs');
 const submitCode = require('./controllers/submitcode');
+const checkSubmit = require('./controllers/checksubmit');
 
 if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
@@ -12,6 +13,8 @@ if (process.env.NODE_ENV !== 'production') {
 const app = express();
 
 const PORT = process.env.PORT || 3001;
+
+let submitRecord = {};
 // --
 
 // MIDDLEWARE
@@ -37,7 +40,8 @@ Github: <a href="https://github.com/darklordace/alghijudge-api">https://github.c
 	`);
 });
 
-app.post('/submitcode', submitCode.handleSubmitCode(fs));
+app.post('/submitcode', submitCode.handleSubmitCode(fs, submitRecord));
+app.post('/checksubmit', checkSubmit.handleCheckSubmit(submitRecord));
 // --
 
 // START SERVER
