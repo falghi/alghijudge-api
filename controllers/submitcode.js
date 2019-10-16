@@ -58,6 +58,19 @@ const handleSubmitCode = (fs, submitRecord) => (req, resp) => {
                                             inputData = removeTrailing(inputData);
 
                                             let isAccepted = "WA";
+                                            if (result.exitCode === null) {
+                                                isAccepted = "TLE";
+                                            } else if (result.exitCode !== 0) {
+                                                if (result.errorType === "run-time") {
+                                                    if (result.stderr.includes("java.lang.OutOfMemoryError")) {
+                                                        isAccepted = "MLE";
+                                                    } else {
+                                                        isAccepted = "RTE";
+                                                    }
+                                                } else {
+                                                    isAccepted = "CE";
+                                                }
+                                            }
                                             if (outputData === result.stdout) {
                                                 isAccepted = "AC";
                                             }
@@ -94,6 +107,22 @@ const handleSubmitCode = (fs, submitRecord) => (req, resp) => {
                                                 inputData = removeTrailing(inputData);
 
                                                 let isAccepted = "WA";
+                                                if (result.exitCode === null) {
+                                                    isAccepted = "TLE";
+                                                } else if (result.exitCode !== 0) {
+                                                    if (result.errorType === "run-time") {
+                                                        if (result.stderr.includes("java.lang.OutOfMemoryError")) {
+                                                            isAccepted = "MLE";
+                                                        } else {
+                                                            isAccepted = "RTE";
+                                                        }
+                                                    } else {
+                                                        isAccepted = "CE";
+                                                    }
+                                                }
+                                                if (outputData === result.stdout) {
+                                                    isAccepted = "AC";
+                                                }
                                                 if (outputData === result.stdout) {
                                                     isAccepted = "AC";
                                                 }
