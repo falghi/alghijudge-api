@@ -30,7 +30,7 @@ if (process.env.NODE_ENV !== 'production') {
 // ROUTING
 app.get('/', (req, resp) => {
 	resp.send(`
-Visit the frontend: <a href="https://alghijudge.herokuapp.com/">https://alghijudge.herokuapp.com/</a><br>
+Visit the frontend: <a href="https://judge.falghifari.com/">https://judge.falghifari.com/</a><br>
 <br>
 MIT License<br>
 <br>
