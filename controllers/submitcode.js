@@ -175,7 +175,7 @@ const handleSubmitCode = (fs, submitRecord) => (req, resp) => {
             fs.unlinkSync(codePath);
             submitRecord[newClassName]['finished'] = true;
             setTimeout(() => {
-                delete submitRecord[newClassNameName];
+                delete submitRecord[newClassName];
             }, 30000);
         }).catch(error => {
             fs.unlinkSync(codePath);
@@ -184,7 +184,7 @@ const handleSubmitCode = (fs, submitRecord) => (req, resp) => {
             submitRecord[newClassName]['failed'] = true;
             submitRecord[newClassName]['finished'] = true;
             setTimeout(() => {
-                delete submitRecord[newClassNameName];
+                delete submitRecord[newClassName];
             }, 30000);
         });
     })
