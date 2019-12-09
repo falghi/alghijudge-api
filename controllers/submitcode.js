@@ -4,6 +4,7 @@ numberOfCasesDict = {
     "TP-1 SDA 2019": 10,
     "TP-2 SDA 2019": 15,
     "TP-3 SDA 2019": 40,
+    "TP-4 SDA 2019": 5,
 }
 
 const handleSubmitCode = (fs, submitRecord) => (req, resp) => {
@@ -18,17 +19,27 @@ const handleSubmitCode = (fs, submitRecord) => (req, resp) => {
         codePath = "user_codes/" + newClassName + ".java";
     }
     code = renameClass(code, newClassName);
+
     submitRecord[newClassName] = {};
     submitRecord[newClassName]['finished'] = false;
     submitRecord[newClassName]['failed'] = false;
     submitRecord[newClassName]['result'] = [];
+    submitRecord[newClassName]['failedmsg'] = "";
     resp.json({
         recordName: newClassName
     })
 
+    if (code === "") {
+        submitRecord[newClassName]['finished'] = true;
+        submitRecord[newClassName]['failed'] = true;
+        submitRecord[newClassName]['failedmsg'] = "Public class not found";
+        return;
+    }
+
     fs.writeFile(codePath, code, (writeError) => {
         if (writeError) {
             submitRecord[newClassName]['failed'] = true;
+            submitRecord[newClassName]['failedmsg'] = "Cannot create a new file";
             return;
         }
         let promises = [];
@@ -36,11 +47,13 @@ const handleSubmitCode = (fs, submitRecord) => (req, resp) => {
             promises[i] = new Promise((resolve, reject) => {
                 fs.readFile(`static/${problemName}/in${i+1}`, 'utf8', (err, data) => {
                     if (err) {
+                        submitRecord[newClassName]['failedmsg'] = "Error reading test case";
                         reject(new Error(err));
                     } else {
                         let inputData = data;
                         fs.readFile(`static/${problemName}/out${i+1}`, 'utf8', (err, data) => {
                             if (err) {
+                                submitRecord[newClassName]['failedmsg'] = "Error reading test case";
                                 reject(new Error(err));
                             } else {
                                 let outputData = data;
@@ -51,6 +64,7 @@ const handleSubmitCode = (fs, submitRecord) => (req, resp) => {
                                         compileTimeout: 10000
                                     }, (err, result) => {
                                         if(err) {
+                                            submitRecord[newClassName]['failedmsg'] = "Error compiling/running the program";
                                             reject(new Error(err));
                                         }
                                         else{
@@ -100,6 +114,7 @@ const handleSubmitCode = (fs, submitRecord) => (req, resp) => {
                                             compileTimeout: 10000
                                         }, (err, result) => {
                                             if(err) {
+                                                submitRecord[newClassName]['failedmsg'] = "Error compiling/running the program";
                                                 reject(new Error(err));
                                             }
                                             else{
@@ -159,26 +174,45 @@ const handleSubmitCode = (fs, submitRecord) => (req, resp) => {
         promises[numberOfCases-1].then(values => {
             fs.unlinkSync(codePath);
             submitRecord[newClassName]['finished'] = true;
+            setTimeout(() => {
+                delete submitRecord[newClassNameName];
+            }, 30000);
         }).catch(error => {
             fs.unlinkSync(codePath);
+            if (!(failedmsg in submitRecord[newClassName]))
+                submitRecord[newClassName]['failedmsg'] = "Unknown error occured";
             submitRecord[newClassName]['failed'] = true;
             submitRecord[newClassName]['finished'] = true;
+            setTimeout(() => {
+                delete submitRecord[newClassNameName];
+            }, 30000);
         });
     })
 }
 
-function renameClass(code, newClassName) {
-    let targetSubstring = "public class ";
+function renameClassUtil(code, newClassName, targetSubstring) {
+    let newCode = "";
     for (let i = 0; i < code.length; ++i) {
         if (code.substring(i, targetSubstring.length+i) === targetSubstring) {
             let beforeCode = code.slice(0, i);
             let tempCode = code.slice(i, code.length);
             let afterCode = tempCode.slice(tempCode.search('{'), tempCode.length);
-            code = beforeCode + "public class " + newClassName + " " + afterCode;
+            newCode = beforeCode + targetSubstring + newClassName + " " + afterCode;
             break;
         }
     }
-    return code;
+    return newCode;
+}
+
+function renameClass(code, newClassName) {
+    let newCode = renameClassUtil(code, newClassName, "\r\npublic class ");
+    if (newCode === "")
+        newCode = renameClassUtil(code, newClassName, "\npublic class ");
+    if (newCode === "")
+        newCode = renameClassUtil(code, newClassName, "\rpublic class ");
+    if (newCode === "")
+        newCode = renameClassUtil(code, newClassName, "public class ");
+    return newCode
 }
 
 function makeid(length) {
